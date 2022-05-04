@@ -1,0 +1,16 @@
+.shorten-link-container {
+  padding: 0 1.5rem;
+  margin-top: -5.3rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .shorten-link-container {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .shorten-link-container {
+    padding: 0 10%;
+  }
+}

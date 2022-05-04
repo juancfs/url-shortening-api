@@ -1,0 +1,27 @@
+.copy-btn {
+  font-size: 1rem;
+  margin: 1rem auto 0;
+  padding: 0.563rem 0;
+}
+
+.copy-btn--copied {
+  background-color: var(--dark-purple);
+}
+
+@media screen and (min-width: 1200px) {
+  .copy-btn {
+    display: inline-block;
+    font-size: 0.938rem;
+    margin: 0 0 0 1.5rem;
+    width: 6.438rem;
+    transition: all .3s;
+  }
+  
+  .copy-btn:hover {
+    background-color: var(--light-sky);
+  }
+
+  .copy-btn.copy-btn--copied {
+    background-color: var(--dark-purple);
+  }
+}

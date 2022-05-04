@@ -1,0 +1,21 @@
+.btn-link {
+  background-color: var(--sky);
+  display: inline-block;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 0.875rem 2.5rem;
+}
+
+.btn-link--rounded {
+  border-radius: var(--bold-radius);
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-link {
+    transition: all .3s;
+  }
+
+  .btn-link:hover {
+    background-color: var(--light-sky);
+  }
+}

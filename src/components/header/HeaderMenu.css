@@ -1,0 +1,127 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.menu__logo {
+  display: inline-block;
+}
+
+.menu__submenu {
+  background-color: var(--dark-purple);
+  border-radius: var(--normal-radius);
+  display: none;
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  top: 6rem;
+  padding: 2.5rem 1.5rem;
+  z-index: 1;
+}
+
+.menu__submenu--show {
+  display: inline-block;
+}
+
+.menu__sublist:first-of-type .menu__item:nth-of-type(2) {
+  margin: 1.875rem 0;
+}
+
+.menu__sublist:nth-of-type(2) {
+  border-top: 1px solid hsla(257, 7%, 63%, 25%);
+  margin-top: 1.875rem;
+  padding-top: 2rem;
+}
+
+.menu__item.sign-up {
+  margin-top: 1.5rem;
+}
+
+.menu__item.sign-up a {
+  font-size: 1.125rem;
+  display: block;
+  padding: 0.75rem;
+}
+
+.menu__item {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.hamburger-btn {
+  width: 25px;
+  height: fit-content;
+}
+
+.hamburger-btn__bar {
+  background-color: #9E9AA8;
+  display: block;
+  height: 3px;
+  margin: 6px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    align-items: center;
+    padding: 3rem 4% 4.9rem;
+  }
+
+  .menu__submenu {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+    padding: 0;
+    width: 82%;
+  }
+
+  .menu__sublist, .menu__sublist:first-of-type, .menu__sublist:nth-of-type(2) {
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu__item, .menu__sublist:first-of-type .menu__item:nth-of-type(2), .menu__item.sign-up  {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .menu__item {
+    color: var(--light-purple);
+    font-size: 0.938rem;
+    transition: all .3s;
+  }
+
+  .menu__sublist:first-of-type .menu__item:nth-of-type(2) {
+    margin: 0 2rem;
+  }
+
+  .menu__item.login {
+    margin-right: 2.313rem;
+  }
+
+  .menu__item.sign-up a {
+    font-size: 0.938rem;
+    padding: 0.563rem 1.5rem;
+    transition: all .3s;
+  }
+
+  .menu__item:hover {
+    color: var(--dark-gray);
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .menu {
+    padding: 3rem 10% 4.9rem;
+  }
+}

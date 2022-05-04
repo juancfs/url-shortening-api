@@ -1,0 +1,28 @@
+.main-cta {
+  background-color: var(--dark-purple);
+  background-image: url('../assets/images/bg-boost-mobile.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  padding: 5.625rem 0;
+  text-align: center;
+}
+
+.main-cta__heading {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-cta {
+    background-image: url('../assets/images/bg-boost-desktop.svg');
+  }
+
+  .main-cta__heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}

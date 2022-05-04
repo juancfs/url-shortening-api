@@ -1,0 +1,74 @@
+.cta {
+  text-align: center;
+  padding-bottom: 10.5rem;
+}
+
+.cta__image {
+  background-image: url('../assets/images/illustration-working.svg');
+  background-size: cover;
+  background-position: -15% center;
+  background-repeat: no-repeat;
+  height: 340px;
+}
+
+.cta__heading {
+  color: var(--dark-gray);
+  font-size: 2.625rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.cta__message {
+  color: var(--light-purple);
+  font-size: 1.125rem;
+  margin: 0.938rem 0 2rem;
+}
+
+.cta__heading, .cta__message {
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 520px) {
+  .cta__image {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    padding-left: 4%;
+  }
+
+  .cta__image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .cta__text {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+  }
+
+  .cta__heading {
+    font-size: 5rem;
+    line-height: 90px;
+    padding: 0;
+  }
+
+  .cta__message {
+    font-size: 1.375rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .cta {
+    padding-left: 10%;
+  }
+}

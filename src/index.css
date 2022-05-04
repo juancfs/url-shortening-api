@@ -1,0 +1,38 @@
+:root {
+  /* Color palette */
+  --dark-gray: #34313D;
+  --dark-purple: #3A3054;
+  --purple: #4B3F6B;
+  --light-purple: #9E9AA8;
+  --light-gray: #EFF1F7;
+  --sky: #2BD0D0;
+  --light-sky: #9AE3E3;
+  --light-red: #F46363;
+
+  /* Border-radius value */
+  --normal-radius: 10px;
+  --bold-radius: 28px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-main {
+  background-color: var(--sky);
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.185rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}

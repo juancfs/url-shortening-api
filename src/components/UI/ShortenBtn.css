@@ -1,0 +1,19 @@
+.shorten-btn {
+  padding: 0.688rem 0;
+  margin: 1rem auto 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .shorten-btn {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 1.125rem 2.5rem;
+    width: fit-content;
+    transition: all .3s;
+  }
+
+  .shorten-btn:hover {
+    background-color: var(--light-sky);
+  }
+}
