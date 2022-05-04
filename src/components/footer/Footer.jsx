@@ -9,10 +9,10 @@ import './Footer.css';
 function Footer() {
   return (
     <footer>
-      <article className="footer__logo">
+      <div className="footer__logo">
         <img src={logo} alt="Logo of Shortly" />
-      </article>
-      <nav className="footer__nav">
+      </div>
+      <nav aria-label="Features menu" className="footer__nav">
         <div className="footer__nav-inner-container">
           <h3 className="footer__nav-heading">Features</h3>
           <ul className="footer__nav-list">
@@ -59,7 +59,7 @@ function Footer() {
           </ul>
         </div>
       </nav>
-      <nav className="social">
+      <nav aria-label="Social media menu" className="social">
         <ul className="social__nav-list">
           <li className="social__item">
             <a href="https://www.facebook.com">

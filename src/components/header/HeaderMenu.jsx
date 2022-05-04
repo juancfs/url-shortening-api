@@ -7,7 +7,7 @@ function HeaderMenu() {
   const [openMenu, setOpenMenu] = useState(false);
   const onHamburgerHandler = () => setOpenMenu(!openMenu);
   return (
-    <nav className="menu">
+    <nav aria-label="Header menu" className="menu">
       <a href="/" className="menu__logo">
         <img src={Logo} alt="Logo of Shortly" />
       </a>

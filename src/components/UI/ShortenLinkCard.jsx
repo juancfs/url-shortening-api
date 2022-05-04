@@ -6,11 +6,12 @@ import './ShortenLinkCard.css';
 function ShortenLinkCard({ isValidInput, onSubmit, onInputChange }) {
   const isEnterKey = (event) => {
     if (event.keyCode === 13) {
+      event.preventDefault();
       onSubmit();
     }
   };
   return (
-    <article className="shorten-card">
+    <form className="shorten-card">
       <div className="shorten-card__input-container">
         <input
           type="text"
@@ -34,7 +35,7 @@ function ShortenLinkCard({ isValidInput, onSubmit, onInputChange }) {
         label="Shorten it!"
         onClickHandler={onSubmit}
       />
-    </article>
+    </form>
   );
 }
 
