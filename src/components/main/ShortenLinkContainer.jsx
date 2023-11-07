@@ -28,8 +28,16 @@ function ShortenLinkContainer() {
     if (inputVal !== '') {
       setIsValidInput(true);
       try {
-        const reqURL = `https://api.shrtco.de/v2/shorten?url=${inputVal.toLowerCase()}`;
-        const shortenRes = await fetch(reqURL);
+        const reqURL = "/api/v1/shorten";
+        const shortenRes = await fetch(reqURL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            url: inputVal
+          })
+        });
         const data = await shortenRes.json();
         if (data.ok) {
           const linkExists = shortenedURLs.find(
